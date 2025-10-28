@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  width: 100%;
+  background: #265E94;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 140px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #FFD700;
+}
+
+/* ===== LANDING ===== */
+.landing {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(265deg, #265E94 100%, #265E94 60%, #265E94 0%);
+  color: white;
+  padding: 0 5%;
+  position: relative;
+}
+
+.landing-left {
+  width: 45%;
+}
+
+.landing-left h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.landing-left h1 span {
+  color: #FFD700;
+}
+
+.landing-left p {
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  background-color: #FFD700;
+  color: #265E94;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
+
+.landing-right {
+  position: relative;
+}
+
+.sibot-img {
+  width: 420px;
+  position: relative;
+  z-index: 2;
+}
+
+.shadow {
+  position: absolute;
+  width: 420px;
+  bottom: -20px;
+  left: 0;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.icon-row {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.icon-row img {
+  width: 60px;
+  transition: 0.3s;
+}
+
+.icon-row img:hover {
+  transform: scale(1.2);
+}
+
+/* ===== CHATBOT ===== */
+.chatbot-section {
+  background: #f8f9fb;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.chatbox {
+  width: 550px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.chat-header {
+  background: #265E94;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.chat-body {
+  padding: 20px;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.bot-msg, .user-msg {
+  margin-bottom: 15px;
+}
+
+.bot-msg {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.bot-msg img {
+  width: 40px;
+}
+
+.bot-msg p {
+  background: #e9f1fa;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 75%;
+}
+
+.user-msg p {
+  background: #265E94;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 70%;
+  margin-left: auto;
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+  flex: 1;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  outline: none;
+}
+
+.chat-input button {
+  background: #265E94;
+  color: white;
+  border: none;
+  padding: 0 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.chat-input button:hover {
+  background: #1e4d77;
+}
+
+/* ===== TESTIMONI ===== */
+.testimoni {
+  padding: 100px 0;
+  background: white;
+  text-align: center;
+}
+
+.testimoni h2 {
+  font-size: 32px;
+  color: #265E94;
+  margin-bottom: 50px;
+}
+
+.testimoni-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.testi-card {
+  background: #f1f5fa;
+  border-radius: 12px;
+  padding: 30px;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.testi-card:hover {
+  transform: translateY(-8px);
+}
+
+.testi-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.testi-card p {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.testi-card h4 {
+  color: #265E94;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #265E94;
+  color: white;
+  position: relative;
+  padding: 60px 0 80px;
+}
+
+.footer-content {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left img {
+  width: 120px;
+  margin-bottom: 8px;
+}
+
+.footer-right img {
+  width: 40px;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.footer-right img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.7;
+  z-index: 0;
+}
+

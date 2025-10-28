@@ -3,5 +3,9 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('user.dashboard');
 });
+
+route::get('/katalog', function () {
+    return view('user.katalog');
+})->name('katalog');

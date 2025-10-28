@@ -1,0 +1,313 @@
+/* ==================== ROOT VARIABLES ==================== */
+:root {
+  --primary: #265E94;
+  --gradient: linear-gradient(265deg, #265E94 100%, #265E94 60%, #265E94 0%);
+  --white: #fff;
+  --shadow: rgba(38, 94, 148, 0.1);
+  --radius: 20px;
+  --font: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: #f7f9fc;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* ==================== LAYOUT CONTAINER ==================== */
+.catalog-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ==================== SIDEBAR ==================== */
+.sidebar {
+  width: 250px;
+  background: var(--gradient);
+  color: #fff;
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 40px 40px 0;
+  box-shadow: 2px 0 20px rgba(38, 94, 148, 0.15);
+}
+
+.logo-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo-section img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.logo-section h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 6px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 30px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  border-left: 5px solid transparent;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background: rgba(255, 255, 255, 0.15);
+  border-left: 5px solid #fff;
+}
+
+/* ==================== MAIN CONTENT ==================== */
+.main-content {
+  flex: 1;
+  padding: 40px 60px;
+}
+
+/* ==================== HEADER (KATALOG PAGE) ==================== */
+.header-katalog {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header-katalog h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.header-katalog .icon-cart {
+  font-size: 1.5rem;
+  color: var(--primary);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header-katalog .icon-cart:hover {
+  transform: scale(1.1);
+}
+
+/* ==================== SEARCH BAR & FILTER ==================== */
+.search-filter-container {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.search-bar {
+  flex: 1;
+  position: relative;
+  background: var(--white);
+  border-radius: 40px;
+  box-shadow: 0 2px 10px var(--shadow);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: var(--font);
+}
+
+.search-bar i {
+  color: var(--primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btn-filter {
+  background: var(--gradient);
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  height: 50px;
+  padding: 0 25px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(38, 94, 148, 0.3);
+  transition: 0.3s;
+}
+
+.btn-filter:hover {
+  transform: scale(1.05);
+  opacity: 0.95;
+}
+
+/* ==================== KATEGORI ==================== */
+.kategori-section {
+  margin-bottom: 50px;
+}
+
+.kategori-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.kategori-list {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 10px;
+}
+
+.kategori-item {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: var(--white);
+  box-shadow: 0 3px 10px var(--shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.kategori-item.active {
+  background: var(--gradient);
+  color: var(--white);
+}
+
+.kategori-item:hover {
+  transform: scale(1.05);
+}
+
+.kategori-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.kategori-item span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #444;
+}
+
+/* ==================== KATALOG JASA & PRODUK ==================== */
+.katalog-wrapper {
+  margin-bottom: 60px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-row h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.lihat-semua {
+  font-size: 0.9rem;
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.lihat-semua:hover {
+  text-decoration: underline;
+}
+
+.katalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+.katalog-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px var(--shadow);
+  padding: 16px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.katalog-card:hover {
+  transform: translateY(-4px);
+}
+
+.katalog-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.katalog-card .nama-produk {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.katalog-card .harga {
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ==================== CHAT BUTTON ==================== */
+.chat-button {
+  position: fixed;
+  bottom: 30px;
+  right: 35px;
+  width: 65px;
+  height: 65px;
+  background: var(--gradient);
+  border-radius: 50%;
+  box-shadow: 0 6px 15px rgba(38, 94, 148, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.chat-button img {
+  width: 60%;
+}
+
+.chat-button:hover {
+  transform: scale(1.1);
+}
