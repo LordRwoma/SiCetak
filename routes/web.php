@@ -2,12 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
-// Landing Page
 Route::get('/', function () {
     return view('home');
 })->name('home');
 
-// Dashboard Routes
 Route::get('/dashboard', function () {
     return view('dashboard.index');
 })->name('dashboard');
@@ -27,3 +25,7 @@ Route::get('/dashboard/lacak-pesanan', function () {
 Route::get('/dashboard/keranjang', function () {
     return view('dashboard.keranjang');
 })->name('dashboard.keranjang');
+
+Route::get('/dashboard/checkout', function () {
+    return view('dashboard.checkout');
+})->name('dashboard.checkout');

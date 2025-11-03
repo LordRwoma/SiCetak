@@ -1,0 +1,296 @@
+/* === Layout Container === */
+.checkout-container {
+    background: #f9fbfd;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+/* === Header === */
+.checkout-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-back {
+    background: #e8eefc;
+    border-radius: 10px;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #0a297e;
+    font-weight: 600;
+}
+
+/* === Scrollable Content === */
+.scrollable-section {
+    max-height: 75vh;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* === Section Blocks === */
+.section-customer,
+.section-order,
+.order-total,
+.payment-method,
+.qris-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* === Headings === */
+.section-customer h3,
+.section-order h3,
+.payment-method h3,
+.order-total h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0a297e;
+    font-weight: 700;
+}
+
+/* === Form Fields === */
+.form-group {
+    margin-bottom: 12px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #d0d7e2;
+    font-size: 14px;
+    outline: none;
+}
+
+.input-field:focus {
+    border-color: #0a297e;
+}
+
+/* === Order Items === */
+.order-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #ddd;
+    padding: 10px 0;
+}
+
+.item-img {
+    width: 60px;
+    height: 60px;
+    background-color: #c9d9f5;
+    border-radius: 10px;
+}
+
+.item-info {
+    flex: 1;
+    margin-left: 12px;
+}
+
+.item-info h4 {
+    font-size: 16px;
+    margin: 0;
+    color: #222;
+}
+
+.item-info p {
+    font-size: 14px;
+    color: #777;
+    margin: 2px 0 0;
+}
+
+.item-price {
+    font-weight: 600;
+    color: #0a297e;
+}
+
+/* === Quantity Control === */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.qty-btn {
+    background: #e8eefc;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.qty-btn:hover {
+    background: #c9d9f5;
+}
+
+.qty-value {
+    margin: 0 8px;
+    font-weight: 600;
+}
+
+/* === Total Section === */
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0a297e;
+}
+
+/* === Payment Section === */
+.payment-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.payment-btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #d0d7e2;
+    background: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.payment-btn:hover {
+    background: #f0f4ff;
+}
+
+.payment-btn.active {
+    border-color: #0a297e;
+    background: #e8eefc;
+    color: #0a297e;
+}
+
+/* === QRIS Section === */
+.qris-section {
+    text-align: center;
+}
+
+.qris-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.qris-box {
+    border: 2px solid #0a297e;
+    border-radius: 10px;
+    padding: 10px;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qris-image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* === Upload Box === */
+.upload-box {
+    border: 2px solid #0a297e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-box:hover {
+    background: #f5f7ff;
+}
+
+.upload-icon {
+    font-size: 32px;
+    color: #0a297e;
+}
+
+.upload-label p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* === Submit Button === */
+.btn-submit {
+    width: 100%;
+    background: #0a297e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: #1d3cbf;
+}
+
+/* === Floating Chat Button === */
+.floating-chat-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #0a297e;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.floating-chat-btn:hover {
+    background: #1d3cbf;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .checkout-container {
+        padding: 10px;
+    }
+
+    .qris-container {
+        flex-direction: column;
+    }
+
+    .payment-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn-submit {
+        font-size: 15px;
+    }
+}
