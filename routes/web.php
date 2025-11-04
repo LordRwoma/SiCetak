@@ -29,3 +29,28 @@ Route::get('/dashboard/keranjang', function () {
 Route::get('/dashboard/checkout', function () {
     return view('dashboard.checkout');
 })->name('dashboard.checkout');
+=======
+Route::get('/admin/login', function () {
+    return view('admin.adminlogin');
+})->name('admin.adminlogin');
+
+Route::get('/admin/dashboard', function () {
+    return view('admin.admindashboard');
+})->name('admin.admindashboard');
+
+Route::get('/admin/dashboard/kelola-jasa', function () {
+    return view('admin.kelolajasa');
+})->name('admin.kelolajasa');
+
+Route::get('/admin/dashboard/kelola-produk', function () {
+    return view('admin.kelolaproduk');
+})->name('admin.kelolaproduk');
+
+Route::get('/admin/dashboard/kelola-pesanan', function () {
+    return view('admin.kelolapesanan');
+})->name('admin.kelolapesanan');
+
+Route::get('/admin/dashboard/kelola-keuangan', function () {
+    return view('admin.kelolakeuangan');
+})->name('admin.kelolakeuangan');
+
