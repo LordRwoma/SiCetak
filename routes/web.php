@@ -29,7 +29,7 @@ Route::get('/dashboard/keranjang', function () {
 Route::get('/dashboard/checkout', function () {
     return view('dashboard.checkout');
 })->name('dashboard.checkout');
-=======
+
 Route::get('/admin/login', function () {
     return view('admin.adminlogin');
 })->name('admin.adminlogin');
