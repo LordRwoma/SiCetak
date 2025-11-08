@@ -14,6 +14,10 @@ Route::get('/dashboard/katalog', function () {
     return view('dashboard.katalog');
 })->name('dashboard.katalog');
 
+Route::get('/dashboard/katalog/produk', function () {
+    return view('dashboard.produk');
+})->name('dashboard.katalog.produk');
+
 Route::get('/dashboard/si-bot', function () {
     return view('dashboard.si-bot');
 })->name('dashboard.si-bot');
