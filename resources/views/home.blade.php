@@ -16,7 +16,7 @@
                 Memperkenalkan sebuah aplikasi yang dapat membantu anda untuk mengirim file digital ke mesin cetak fotocopy dengan instant tanpa perlu menunggu dan membawa Flashdisk!
             </p>
             <div class="hero-buttons">
-                <button class="btn btn-primary" onclick="lihatFitur()">Lihat Fitur Kami</button>
+                <a href="{{ route('dashboard') }}" class="btn btn-primary">Belanja Sekarang</a>
                 <a href="https://wa.me/6281234567890?text=Halo%20Admin%20SiRoma%2C%20saya%20ingin%20bertanya"
                     target="_blank"
                     class="btn btn-secondary onclick="hubungiKami()">
