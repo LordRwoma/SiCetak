@@ -22,7 +22,8 @@
             aja lah iya! kak!
         </p>
         
-        <button class="btn-pesan-sekarang">Pesan Sekarang</button>
+        <a href="{{ route('dashboard.katalog') }}" class="btn-pesan-sekarang">Pesan Sekarang</a>
+        
     </div>
     
     <div class="hero-banner-image">
@@ -51,7 +52,7 @@
                 <h4 class="product-name">Banner</h4>
                 <p class="product-price">Rp 11.000</p>
             </div>
-            <button class="btn-add-cart">
+            <button class="btn-add-cart" onclick="addToCart({{ $i }})">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="9" cy="21" r="1"/>
                     <circle cx="20" cy="21" r="1"/>
@@ -97,9 +98,32 @@
 </section>
 
 <!-- Chat Button -->
-<button class="floating-chat-btn">
+<a href="{{ route('dashboard.si-bot') }}" class="floating-chat-btn">
     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
     </svg>
-</button>
+</a>
+
+<script>
+function addToCart(id) {
+    fetch("{{ route('keranjang.add') }}", {
+        method: "POST",
+        headers: {
+            "X-CSRF-TOKEN": "{{ csrf_token() }}",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            id: id,
+            nama: "Produk " + id,
+            harga: 11000
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+        alert(data.message);
+    })
+    .catch(err => console.error(err));
+}
+</script>
+
 @endsection
