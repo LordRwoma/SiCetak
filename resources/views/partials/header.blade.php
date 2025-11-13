@@ -3,7 +3,7 @@
     <div class="header-container">
         <div class="logo">
             <a href="{{ route('home') }}" style="text-decoration: none;">
-                <span class="logo-text">IR</span>
+                <span class="logo-text">SIROMA</span>
             </a>
         </div>
         <button class="btn-masuk-app" id="btnMasukApp">Masuk App</button>
